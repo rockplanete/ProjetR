@@ -99,7 +99,7 @@ supprBloc <- function(hauteur,largeur,mat){                                    #
 ################################################################################
 
 #Supprime les détails sur les bords droit et gauche ############################
-detail <- function(hauteur,mat){                                               #
+detail <- function(hauteur,largeur,mat){                                               #
   l<-1
   boucle<-0
   while(boucle<2){
@@ -208,7 +208,7 @@ OneSimu <- function(largeur,hauteur,evolve){                                   #
     co<-turn101to111(hauteur,largeur,co)
     co<-supprBloc(hauteur,largeur,co)
     co<-turn101to111(hauteur,largeur,co)
-    co<-detail(hauteur,co)
+    co<-detail(hauteur,largeur,co)
     FinalTab<-rbind(FinalTab,counter(alea,co,hauteur,largeur))
     i<-i+1
   }
