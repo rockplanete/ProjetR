@@ -6,7 +6,7 @@ Ligne à rentrer pour récuperer le package :
 
 ```{r}
 devtools::install_github("rockplanete/ProjetR")
-library(ProjetR)
+library(Projet2R)
 ```
 
 
